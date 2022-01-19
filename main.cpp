@@ -22,10 +22,10 @@ int main(){
     srand(time(NULL));//usado pra gerar números aleatórios.
     detectgraph(&gd,&gm);//detecta o adaptador grafico do sistema.
     initgraph(&gd,&gm,NULL);//inicializa o sistema grafico para renderizar os elementos na tela.
-    initwindow(1580, 720, "snake_game_by_AntonyLucas");//iniciar e definir a largura e altura da tela
+    initwindow(1540, 720, "snake_game_by_AntonyLucas");//iniciar e definir a largura e altura da tela
 
-    outtextxy(1380, 50, "use as setas direcionais");
-    outtextxy(1380, 70, "para mover");
+    outtextxy(1360, 50, "use as setas direcionais");
+    outtextxy(1360, 70, "para mover");
 
     setfillstyle(1, 10); //define o tipo de linha e a cor (tipo, cor).
 
@@ -115,14 +115,14 @@ int main(){
         }
 
         itoa(gp, buffer, 10); // converter int pra char
-        outtextxy(1380, 250, "pontuacao: ");
-        outtextxy(1480, 250, buffer);
+        outtextxy(1360, 250, "pontuacao: ");
+        outtextxy(1460, 250, buffer);
 
         setfillstyle(1,14);
         for(i = 0; i < l; i++){
             bar(x[i]-s/2, y[i]-s/2, x[i]+s/2,y[i]+s/2);
         }
-        delay(105);// velocidade da cobra
+        delay(100);// velocidade da cobra
     }
     while(!GetAsyncKeyState(VK_RETURN))
     closegraph();
