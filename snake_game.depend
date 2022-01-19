@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1642358329 source:d:\faculdade\semestre-1\disciplina - técnicas de programação\nap2\snake_game_nap2\snake_game\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<graphics.h>
+	<windows.h>
+	<conio.h>
+
